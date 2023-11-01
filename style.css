@@ -1,0 +1,35 @@
+body{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin: 0%;
+    padding: -50%;
+    color: aqua;
+}
+#cpyright{
+    text-align: center;
+}
+hr{
+    border-color: black;
+}
+h2{
+    text-align: center;
+}
+#p1{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Brush Script MT", Cursive;
+}
+#p2{
+    text-align: center;
+}
+i{
+    color: darkred;
+}
+big{
+    background-color: rgb(14, 250, 6);
+}
+mark{
+    background-color: crimson;
+}
