@@ -3,8 +3,10 @@ body{
     display: flex;
     flex-direction: column;
     place-items: center;
+    height: 100%;
+    width: 100%;
     margin: 0%;
-    padding: -50%;
+    padding: -90%;
     color: aqua;
 }
 #cpyright{
@@ -13,23 +15,36 @@ body{
 hr{
     border-color: black;
 }
-h2{
+.header-H{
+    color: chartreuse;
     text-align: center;
 }
+
 #p1{
     text-align: center;
-    font-size: 25px;
-    font-family: "Brush Script MT", Cursive;
+    font-size: 20px;
+    font-family: palatino, serif;
+    color: aqua;
 }
 #p2{
     text-align: center;
+    color: rgb(73, 247, 5)
 }
 i{
     color: darkred;
 }
 big{
-    background-color: rgb(14, 250, 6);
+    background-color: rgba(14, 250, 6, 0.103);
 }
 mark{
     background-color: crimson;
+}
+a{
+    color: crimson;
+}
+.links{
+    text-align: center;
+    color: rgb(21, 145, 145);
+    background: linear-gradient(to right, #302b63, #0f0c29, #24243e, #302b63);
+
 }
