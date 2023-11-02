@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Caveat;
+    src: url(Fonts/Caveat-VariableFont_wght.ttf);
+}
 body{
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     display: flex;
@@ -23,7 +27,8 @@ hr{
 #p1{
     text-align: center;
     font-size: 20px;
-    font-family: palatino, serif;
+    /*font-family: palatino, serif;*/
+    font-family: Caveat;
     color: aqua;
 }
 #p2{
