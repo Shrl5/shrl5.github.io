@@ -15,7 +15,7 @@ body{
     place-items: center;
     padding: auto;
     border: 4px solid;
-    border-color: rgb(0, 38, 255);
+    border-color: crimson;
     font-family: Crazy;
     /*  This is just to save what i've learned.
     background-image: url(imgs/EPic.png);
@@ -29,13 +29,10 @@ hr{
     border-color: rgb(255, 0, 0);
 }
 i{
-    color: darkred;
+    color: rgb(255, 146, 3);
 }
 i:hover{
     color: crimson;
-}
-big{
-    background-color: rgba(220, 20, 60, 0.295);
 }
 mark{
     background-color: crimson;
@@ -43,18 +40,12 @@ mark{
 a{
     color: crimson;
 }
-header{
-    position: sticky;
-}
 /*------------------------------------------- ID's --------------------------------------*/
-#cpyright{
-    text-align: center;
-    color: aqua;
-}
 #p1:hover{
     color: rgb(9, 255, 0);
 }
 #p2{
+    border:1px solid brown;
     text-align: center;
     color: crimson;
 }
@@ -64,9 +55,23 @@ header{
 #imgs{
     border: 2px solid red;
 }
+#myname{
+    color: salmon;
+}
+#nmnm{
+    color: black;
+    background-color: crimson;
+}
+#nmnm::selection{
+    color: rgb(202, 7, 7);
+    background-color: rgba(0, 0, 0, 0.678);
+}
 /*---------------------------------------- Classes ---------------------------------------*/
+.P1::selection{
+    color: rgb(202, 7, 7);
+    background-color: rgba(0, 0, 0, 0.678);
+}
 .P1 p{
-
     font-size: 30px;
     /*font-family: Caveat;*/
     color: aqua;
@@ -74,23 +79,69 @@ header{
 }
 .P1{
     text-align: center;
+    margin: 5%;
 }
+.cpyright{
+    text-align: center;
+    color: rgb(253, 249, 6);
+    margin: 15px;
+}
+.cpyright::selection{
+    color: rgb(30, 255, 0);
+    background-color: black;
+}
+.Email{
+    border:3px solid crimson;
+    text-align: center;
+    margin-bottom: 5px;
+    color: crimson;
+}
+.Email::selection{
+    color: coral;
+    background-color: black;
+}
+.Email a{
+    border: none;
+}
+.Email big{
+    border: none;
+}
+
 .links{
     text-align: center;
     color: rgb(21, 145, 145);
     background: linear-gradient(to right, #302b63, #0f0c29, #24243e, #302b63);
 
 }
+.links a::selection{
+    color: coral;
+    background-color: black;
+}
 .toptop{
     display: flex;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.toptop video{
+    margin-left: 5%;
 }
 .topicon{
     float: left;
     margin-right: 10px;
-    
+
 }
-.header-H{
+.Htitle{
     color: chartreuse;
     text-align: center;
     border: 2px solid red;
+    padding: 15px;
+    margin: 5%;
+}
+.Htitle h1::selection{
+    color: rgb(202, 7, 7);
+    background-color: rgba(0, 0, 0, 0.678);
+}
+.Htitle h2::selection{
+    color: rgb(202, 7, 7);
+    background-color: rgba(0, 0, 0, 0.678);
 }
