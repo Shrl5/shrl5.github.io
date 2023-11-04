@@ -7,6 +7,7 @@
     src: url(Fonts/Agbalumo-Regular.ttf);
 }
 /*---------------------------------------- Elements -------------------------------------------*/
+
 body{
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     display: flex;
@@ -15,18 +16,12 @@ body{
     place-items: center;
     padding: auto;
     border: 4px solid;
-    border-color: crimson;
+    border-color: coral;
     font-family: Crazy;
-    /*  This is just to save what i've learned.
-    background-image: url(imgs/EPic.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    */
+
 }
 hr{
-    border-color: rgb(255, 0, 0);
+    border-color: coral;
 }
 i{
     color: rgb(255, 146, 3);
@@ -45,7 +40,7 @@ a{
     color: rgb(9, 255, 0);
 }
 #p2{
-    border:1px solid brown;
+    border:1px solid coral;
     text-align: center;
     color: crimson;
 }
@@ -53,33 +48,91 @@ a{
     place-self: center;
 }
 #imgs{
-    border: 2px solid red;
+    border: 2px solid coral;
 }
 #myname{
     color: salmon;
 }
-#nmnm{
-    color: black;
-    background-color: crimson;
+#author{
+    color: rgb(6, 253, 109);
+    background-color: rgba(200, 220, 20, 0.295);
 }
-#nmnm::selection{
-    color: rgb(202, 7, 7);
+#author::selection{
+    color: rgb(202, 111, 7);
     background-color: rgba(0, 0, 0, 0.678);
 }
 /*---------------------------------------- Classes ---------------------------------------*/
-.P1::selection{
+.imge{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/2ndbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(5px);
+}
+.Content{
+    position: relative;
+    z-index: 1;
+}
+.topmedia{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.topmedia video{
+    margin-left: 5%;
+}
+.topmedia a{
+    display: inline;
+}
+.topicon{
+    float: left;
+    margin-right: 10px;
+
+}
+.Htitle{
+    color: rgb(140, 197, 84);
+    text-align: center;
+    border: 2px solid coral;
+    padding: 15px;
+    margin: 5%;
+}
+.Htitle h1::selection{
+    color: rgb(202, 7, 7);
+    background-color: rgba(0, 0, 0, 0.678);
+}
+.Htitle h2::selection{
+    color: rgb(202, 7, 7);
+    background-color: rgba(0, 0, 0, 0.678);
+}
+.P1 p::selection{
     color: rgb(202, 7, 7);
     background-color: rgba(0, 0, 0, 0.678);
 }
 .P1 p{
     font-size: 30px;
-    /*font-family: Caveat;*/
-    color: aqua;
+    color: rgb(229, 255, 0);
     display: inline;
 }
 .P1{
     text-align: center;
-    margin: 5%;
+    margin: 1%;
+}
+.links{
+    text-align: center;
+    color: rgb(21, 145, 145);
+}
+.links a::selection{
+    color: coral;
+    background-color: black;
+}
+.links a{
+    text-decoration: none;
 }
 .cpyright{
     text-align: center;
@@ -91,9 +144,9 @@ a{
     background-color: black;
 }
 .Email{
-    border:3px solid crimson;
+    border:3px solid coral;
     text-align: center;
-    margin-bottom: 5px;
+    
     color: crimson;
 }
 .Email::selection{
@@ -107,45 +160,42 @@ a{
 .Email big{
     border: none;
 }
-
-.links{
-    text-align: center;
-    color: rgb(21, 145, 145);
-    background: linear-gradient(to right, #302b63, #0f0c29, #24243e, #302b63);
-
-}
-.links a::selection{
-    color: coral;
-    background-color: black;
-}
-.links a{
-    text-decoration: none;
-}
-.toptop{
+.pagination-banner{
+    position: sticky;
     display: flex;
-    margin-left: 5%;
-    margin-top: 10%;
-}
-.toptop video{
-    margin-left: 5%;
-}
-.topicon{
-    float: left;
-    margin-right: 10px;
-
-}
-.Htitle{
-    color: chartreuse;
+    bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 100%;
     text-align: center;
-    border: 2px solid red;
-    padding: 15px;
-    margin: 5%;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(220, 127, 20, 0.11), rgba(221, 76, 9, 0.397));
+    color: chartreuse;
 }
-.Htitle h1::selection{
-    color: rgb(202, 7, 7);
-    background-color: rgba(0, 0, 0, 0.678);
+.active{
+    text-decoration: none;
+    color:rgb(235, 60, 6);
+    font-size: 25px;
+    background-color: rgba(238, 232, 170, 0.411);
+    padding: 1%;
+    margin: 20px;
+    border-radius: 5%;
 }
-.Htitle h2::selection{
-    color: rgb(202, 7, 7);
-    background-color: rgba(0, 0, 0, 0.678);
+.active:hover{
+    font-size: 28px;
+    background-color: rgb(238, 232, 170);
+}
+.pagination-banner a:not(.active){
+    margin: 20px;
+    padding: 1%;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 102, 0);
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 5%;
+}
+.pagination-banner a:not(.active):hover{
+    font-size: 23px;
+    background-color: rgb(220, 247, 159);
 }
