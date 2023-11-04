@@ -102,6 +102,7 @@ a{
 }
 .Email a{
     border: none;
+    text-decoration: none;
 }
 .Email big{
     border: none;
@@ -116,6 +117,9 @@ a{
 .links a::selection{
     color: coral;
     background-color: black;
+}
+.links a{
+    text-decoration: none;
 }
 .toptop{
     display: flex;
