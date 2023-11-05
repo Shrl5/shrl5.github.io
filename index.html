@@ -4,6 +4,7 @@
         <link rel="icon" type="image/png" href="imgs/icon.png">
         <title>Lose Yourself Lyrics</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
         <!--This is the Links for the google fonts.-->
     </head>
     <body>
@@ -11,136 +12,148 @@
         <div class="Content">
             <div>
                 <div class="topmedia">
-                    <img class="topicon" id="imgs" src="imgs/EPic.png" alt="Eminem Picture" height="225" >
-                <!-- <video id="video1" src="video/Eminem - Lose Yourself.mp4" width="400" loop controls></video> -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_Yhyp-_hX2s?si=XLyLjnLgSAWVvZbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/_Yhyp-_hX2s?si=XLyLjnLgSAWVvZbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <header>
-                    <div class="Htitle">      
-                        <h1>Lose yourself Lyrics</h1>
-                        <h2>By <span id="author">Eminem</span></h2>
+                    <div class="Htitle">     
+                        <img class="topicon" id="authorimage" src="imgs/EPic.png" alt="Author's Picture" height="225" >
+                        <div id="txt">
+                            <h1>Lose Yourself</h1>
+                            <h2>By <span id="author">Eminem.</span></h2>
+                        </div>
+                        <div class="buttons">
+                            <button onclick="SpotifyLink()">
+                                <img src="imgs/SpotifyIcon2.png" height="50" alt="Spotify Icon" title="Spotify link for this song">
+                            </button>
+                            <button onclick="YoutubeLink()">
+                                <img src="imgs/YoutubeIcon.png" height="50" alt="Youtube Icon" title="Youtube link for this song">
+                            </button>
+                            <button onclick="SoundcloudLink()">
+                                <img src="imgs/SoudcloudIcon.png" height="50" alt="Soudcloud Icon" title="Soundcloud link for this song">
+                            </button>
+                        </div>
                     </div>  
                 </header>
                 <main>
-
                     <div class="P1">
-                <p id="p1">
-                    Look, if you had one shot or one opportunity <br>
-                    To seize everything you ever wanted in one moment<br>
-                    Would you capture it or just let it slip?<br>
-                    <br> Yo <br>
-                    His palms are sweaty, knees weak, arms are heavy<br>
-
-                    There's vomit on his sweater already, mom's spaghetti<br>
-                    He's nervous, but on the surface, he looks calm and ready<br>
-                    To drop bombs, but he keeps on forgetting<br>
-                    What he wrote down, the whole crowd goes so loud<br>
-                    He opens his mouth, but the words won't come out<br>
-                    He's chokin', how? Everybody's jokin' now<br>
-                    The clock's run out, time's up, over, blaow<br>
-                    Snap back to reality, ope, there goes gravity<br>
-                    Ope, there goes Rabbit, he choked, he's so mad<br>
-                    But he won't give up that easy, no, he won't have it<br>
-                    He knows his whole back's to these ropes, it don't matter<br>
-                    He's dope, he knows that, but he's broke, he's so stagnant<br>
-                    He knows when he goes back to this mobile home, that's when it's<br>
-                    Back to the lab again, yo, this old rhapsody<br>
-                    Better go capture this moment and hope it don't pass him<br>
-                    <br>You better lose yourself in the music<br>
-                    The moment, you own it, you better never let it go (Go)<br>
-                    You only get one shot, do not miss your chance to blow<br>
-                    This opportunity comes once in a lifetime, yo<br>
-                    You better lose yourself in the music<br>
-                    The moment, you own it, you better never let it go (Go)<br>
-                    You only get one shot, do not miss your chance to blow<br>
-                    This opportunity comes once in a lifetime, yo<br>
-                    You better<br>
-                    His soul's escaping through this hole that is gaping<br>
-                    This world is mine for the taking, make me king<br>
-                    As we move toward a new world order<br>
-                    A normal life is boring, but superstardom's<br>
-                    Close to post-mortem, it only grows harder<br>
-                    Homie grows hotter, he blows, it's all over<br>
-                    These hoes is all on him, coast-to-coast shows<br>
-                    He's known as the Globetrotter, lonely roads<br>
-                    God only knows he's grown farther from home, he's no father<br>
-                    He goes home and barely knows his own daughter<br>
-                    But hold your nose 'cause here goes the cold water<br>
-                    These hoes don't want him no mo', he's cold product<br>
-                    They moved on to the next schmoe who flows<br>
-                    He nose-dove and sold nada, and so the soap opera<br>
-                    Is told, it unfolds, I suppose it's old, partner<br>
-                    But the beat goes on, da-da-dom, da-dom, dah-dah-dah-dah<br>
-                    <br>You better lose yourself in the music<br>
-                    The moment, you own it, you better never let it go (Go)<br>
-                    You only get one shot, do not miss your chance to blow<br>
-                    This opportunity comes once in a lifetime, yo<br>
-                    You better lose yourself in the music<br>
-                    The moment, you own it, you better never let it go (Go)<br>
-                    You only get one shot, do not miss your chance to blow<br>
-                    This opportunity comes once in a lifetime, yo<br>
-                    You better<br>
-                    <br>No more games, I'ma change what you call rage<br>
-                    Tear this motherfuckin' roof off like two dogs caged<br>
-                    I was playin' in the beginning, the mood all changed<br>
-                    I've been chewed up and spit out and booed off stage<br>
-                    But I kept rhymin' and stepped right in the next cypher<br>
-                    Best believe somebody's payin' the Pied Piper<br>
-                    All the pain inside amplified by the<br>
-                    Fact that I can't get by with my nine-to-<br>
-                    Five and I can't provide the right type of life for my family<br>
-                    'Cause, man, these goddamn food stamps don't buy diapers<br>
-                    And there's no movie, there's no Mekhi Phifer, this is my life<br>
-                    And these times are so hard, and it's gettin' even harder<br>
-                    Tryna feed and water my seed, plus teeter-totter<br>
-                    Caught up between bein' a father and a prima donna<br>
-                    Baby-mama drama, screamin' on her, too much for me to wanna<br>
-                    Stay in one spot, another day of monotony's gotten me<br>
-                    To the point I'm like a snail, I've got<br>
-                    To formulate a plot or end up in jail or shot<br>
-                    Success is my only motherfuckin' option, failure's not<br>
-                    Mom, I love you, but this trailer's got<br>
-                    To go, I cannot grow old in Salem's Lot<br>
-                    So here I go, it's my shot; feet, fail me not<br>
-                    This may be the only opportunity that I got<br>
-                    <br>You better lose yourself in the music<br>
-                    The moment, you own it, you better never let it go (Go)<br>
-                    You only get one shot, do not miss your chance to blow<br>
-                    This opportunity comes once in a lifetime, yo<br>
-                    You better lose yourself in the music<br>
-                    The moment, you own it, you better never let it go (Go)<br>
-                    You only get one shot, do not miss your chance to blow<br>
-                    This opportunity comes once in a lifetime, yo<br>
-                    You better<br>
-                    You can do anything you set your mind to, man..<br>
-                </p>
+                        <p id="p1">
+                            <span>[Intro]</span><br>
+                            Look, if you had one shot or one opportunity <br>
+                            To seize everything you ever wanted in one moment<br>
+                            Would you capture it or just let it slip?<br>
+                            Yo<br>
+                            <span>[Verse 1]</span><br>
+                            His palms are sweaty, knees weak, arms are heavy<br>
+                            There's vomit on his sweater already, mom's spaghetti<br>
+                            He's nervous, but on the surface, he looks calm and ready<br>
+                            To drop bombs, but he keeps on forgetting<br>
+                            What he wrote down, the whole crowd goes so loud<br>
+                            He opens his mouth, but the words won't come out<br>
+                            He's chokin', how? Everybody's jokin' now<br>
+                            The clock's run out, time's up, over, blaow<br>
+                            Snap back to reality, ope, there goes gravity<br>
+                            Ope, there goes Rabbit, he choked, he's so mad<br>
+                            But he won't give up that easy, no, he won't have it<br>
+                            He knows his whole back's to these ropes, it don't matter<br>
+                            He's dope, he knows that, but he's broke, he's so stagnant<br>
+                            He knows when he goes back to this mobile home, that's when it's<br>
+                            Back to the lab again, yo, this old rhapsody<br>
+                            Better go capture this moment and hope it don't pass him<br><br>
+                            <span>[Chorus]</span><br>
+                            You better lose yourself in the music<br>
+                            The moment, you own it, you better never let it go (Go)<br>
+                            You only get one shot, do not miss your chance to blow<br>
+                            This opportunity comes once in a lifetime, yo<br>
+                            You better lose yourself in the music<br>
+                            The moment, you own it, you better never let it go (Go)<br>
+                            You only get one shot, do not miss your chance to blow<br>
+                            This opportunity comes once in a lifetime, yo<br>
+                            You better<br>
+                            <span>[Verse 2]</span><br>
+                            His soul's escaping through this hole that is gaping<br>
+                            This world is mine for the taking, make me king<br>
+                            As we move toward a new world order<br>
+                            A normal life is boring, but superstardom's<br>
+                            Close to post-mortem, it only grows harder<br>
+                            Homie grows hotter, he blows, it's all over<br>
+                            These hoes is all on him, coast-to-coast shows<br>
+                            He's known as the Globetrotter, lonely roads<br>
+                            God only knows he's grown farther from home, he's no father<br>
+                            He goes home and barely knows his own daughter<br>
+                            But hold your nose 'cause here goes the cold water<br>
+                            These hoes don't want him no mo', he's cold product<br>
+                            They moved on to the next schmoe who flows<br>
+                            He nose-dove and sold nada, and so the soap opera<br>
+                            Is told, it unfolds, I suppose it's old, partner<br>
+                            But the beat goes on, da-da-dom, da-dom, dah-dah-dah-dah<br><br>
+                            <span>[Chorus]</span><br>
+                            You better lose yourself in the music<br>
+                            The moment, you own it, you better never let it go (Go)<br>
+                            You only get one shot, do not miss your chance to blow<br>
+                            This opportunity comes once in a lifetime, yo<br>
+                            You better lose yourself in the music<br>
+                            The moment, you own it, you better never let it go (Go)<br>
+                            You only get one shot, do not miss your chance to blow<br>
+                            This opportunity comes once in a lifetime, yo<br>
+                            You better<br>
+                            <span>[Verse 3]</span><br>
+                            No more games, I'ma change what you call rage<br>
+                            Tear this motherfuckin' roof off like two dogs caged<br>
+                            I was playin' in the beginning, the mood all changed<br>
+                            I've been chewed up and spit out and booed off stage<br>
+                            But I kept rhymin' and stepped right in the next cypher<br>
+                            Best believe somebody's payin' the Pied Piper<br>
+                            All the pain inside amplified by the<br>
+                            Fact that I can't get by with my nine-to-<br>
+                            Five and I can't provide the right type of life for my family<br>
+                            'Cause, man, these goddamn food stamps don't buy diapers<br>
+                            And there's no movie, there's no Mekhi Phifer, this is my life<br>
+                            And these times are so hard, and it's gettin' even harder<br>
+                            Tryna feed and water my seed, plus teeter-totter<br>
+                            Caught up between bein' a father and a prima donna<br>
+                            Baby-mama drama, screamin' on her, too much for me to wanna<br>
+                            Stay in one spot, another day of monotony's gotten me<br>
+                            To the point I'm like a snail, I've got<br>
+                            To formulate a plot or end up in jail or shot<br>
+                            Success is my only motherfuckin' option, failure's not<br>
+                            Mom, I love you, but this trailer's got<br>
+                            To go, I cannot grow old in Salem's Lot<br>
+                            So here I go, it's my shot; feet, fail me not<br>
+                            This may be the only opportunity that I got<br><br>
+                            <span>[Chorus]</span><br>
+                            You better lose yourself in the music<br>
+                            The moment, you own it, you better never let it go (Go)<br>
+                            You only get one shot, do not miss your chance to blow<br>
+                            This opportunity comes once in a lifetime, yo<br>
+                            You better lose yourself in the music<br>
+                            The moment, you own it, you better never let it go (Go)<br>
+                            You only get one shot, do not miss your chance to blow<br>
+                            This opportunity comes once in a lifetime, yo<br>
+                            You better<br>
+                            You can do anything you set your mind to, man..<br>
+                        </p>
                     </div>
                     <hr>
-                    <div class="links">
-                <a href="https://www.youtube.com/watch?v=_Yhyp-_hX2s&ab_channel=msvogue23" target="_blank" title="Opens a youtube page for Lose yourself song.">
-                    Youtube link for the full song!
-                </a><br>
-                <a href="https://genius.com/Eminem-lose-yourself-lyrics" target="_blank" title="Opens the offical lyrics website.">
-                The offical lyrics website.
-                </a>
-                    </div>
                 </main>
                 <footer>
-                    <hr>
-                    <div class="cpyright">
-                    <h1 class="cpyright">Done by the most professional Engineer in this world!<br>- The Mighty<i class="cpyright" id="myname">Ghazwan.</i></h1>
-                    </div>
                     <div class="Email">
-            <a href="mailto:abasasadi8@gmail.com" title="Click to send an email" class="Email">
-                Send an email to me bruv<br>
-                <big class="Email">(Pro tip: "Say that I'm the greatest DEV. of all time")</big>
-            </a>
+                        <div class="cpyright">
+                            <h1 class="cpyright">Done by the most professional Engineer in this world!<br>- The Mighty <i id="myname">Ghazwan.</i></h1>
+                        </div>
+                        <a href="mailto:abasasadi8@gmail.com" title="Click to send an email" id="Email-TXT">
+                            Send an email to me bruv<br>
+                            <big>(Pro tip: "Say that I'm the greatest DEV. of all time")</big>
+                        </a>
                     </div>
                 </footer>
+                
                 <div class="pagination-banner">
                     <a href="index.html" class="active">Lose Yourself</a>
                     <a href="oceanland.html">Ocean Land</a>
+                    <a href="coffin.html">Coffin</a>
                 </div>
+                
         </div>
+        <button class="TopButton" onclick="scrollup()">Return to the Top</button>
     </body>
 </html>
