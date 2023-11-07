@@ -26,7 +26,6 @@ hr{
     margin-left: 10px;
     margin-right: 10px;
 }
-
 mark{
     background-color: crimson;
 }
@@ -46,8 +45,12 @@ a{
     box-shadow: 5px 5px 10px black;
 }
 #myname{
-    color: rgb(85, 10, 1);
+    color: rgb(85, 9, 1);
+}
+#myname:hover{
+    color: hsl(6, 100%, 37%);
     text-decoration: underline;
+    transition: 0.2s;
 }
 #myname::selection{
     color: rgb(245, 7, 7);

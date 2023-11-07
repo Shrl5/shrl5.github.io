@@ -2,7 +2,6 @@ function scrollup(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
 function SpotifyLink(){
     if(window.location.pathname.includes("index.html")){
     window.open('https://open.spotify.com/track/5Z01UMMf7V1o0MzF86s6WJ?si=0b580687ee464515', '_blank');
@@ -33,4 +32,7 @@ function SoundcloudLink(){
     }else{
             console.log("Failed opening the Soundcloud Link");
     }
+}
+function define(){
+    window.history.back();
 }
