@@ -48,9 +48,9 @@ a{
     color: rgb(85, 9, 1);
 }
 #myname:hover{
-    color: hsl(6, 100%, 37%);
-    text-decoration: underline;
-    transition: 0.2s;
+    animation-name: rgb;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
 }
 #myname::selection{
     color: rgb(245, 7, 7);
@@ -209,8 +209,11 @@ a{
     background-color: rgba(243, 240, 240, 0.678);
 }
 .P1 span:hover{
-    color: rgb(7, 119, 247);
-    transition: .13s;
+    /*color: rgb(7, 119, 247);
+    transition: .13s;*/
+    animation-name: rgb;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
 }
 .cpyright{
     text-align: center;
@@ -260,4 +263,16 @@ a{
 }
 .TopButton:hover{
     box-shadow: 0px 0px 15px 5px black;
+}
+/*---------------------------------------- Animations ---------------------------------------*/
+@keyframes rgb{
+    100%,0%{color: rgb(255,0,0);}
+    8%{color: rgb(255,127,0);}
+    16%{color: rgb(255,255,0);}
+    25%{color: rgb(127,255,0);}
+    58%{color: rgb(0,127,255);}
+    66%{color: rgb(0,0,255);}
+    75%{color: rgb(127,0,255);}
+    83%{color: rgb(255,0,255);}
+    91%{color: rgb(255,0,127);}
 }
