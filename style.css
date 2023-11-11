@@ -78,7 +78,15 @@ a{
     top: 0px;
     z-index: 5;
 }
+.endofnavbar{
+    margin-right: 10px;
+}
+.loginnavbar{
+    width: 50%;
+    margin-left: 10px;
+}
 .navbar ul{
+    width: 90%;
     margin: 0px;
     padding: 0px;
     list-style-type: none;
@@ -267,12 +275,35 @@ a{
 /*---------------------------------------- Animations ---------------------------------------*/
 @keyframes rgb{
     100%,0%{color: rgb(255,0,0);}
-    8%{color: rgb(255,127,0);}
-    16%{color: rgb(255,255,0);}
-    25%{color: rgb(127,255,0);}
-    58%{color: rgb(0,127,255);}
-    66%{color: rgb(0,0,255);}
-    75%{color: rgb(127,0,255);}
-    83%{color: rgb(255,0,255);}
-    91%{color: rgb(255,0,127);}
+    25%{color: rgb(3, 173, 3);}
+    50%{color: rgb(35, 35, 170);}
+    75%{color: rgb(233, 233, 12);}
+}
+@media screen and (min-width: 250px) {
+    .body{
+        scale: 60%;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 360px) {
+    .body{
+        scale: 70%;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 490px) {
+    .body{
+        scale: 90%;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 900px) {
+    .body{
+        scale: 120%;
+        padding: 0;
+        margin: 0;
+    }
 }

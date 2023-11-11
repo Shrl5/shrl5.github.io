@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="icon" type="image/png" href="imgs/iconEdited.png">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="image">
+        <a href="login.html"><img src="imgs/iconEdited.png" alt="Icon" height="100px" ></a>
+    </div>
+    <div class="content">
+        <span id="return"><a href="#" onclick="GoBack()">Return Back.</a></span>
+        <div class="form">
+            <h2>Log in.</h2>
+            <form onsubmit="return Login()">
+            <input type="email" placeholder="Type your email.." required name="email" id="email" title="Type here your email." maxlength="30">
+            <input type="password" placeholder="Type your password.." required name="password" id="password" title="Type here your password." maxlength="20">
+            <button type="submit" class="login" id="loginbtn">Log in</button>
+            
+            </form>
+            <button onclick="alerting()" class="register" id="register">Register</button>
+        </div>
+    </div>  
+    <div class="info">
+        <h3>I'm not using any form of database in my project yet.</h3>
+        <h4>So for now, please only use these log-in info:</h4>
+            <p>
+                <a href="#" id="emailcopy" onclick="copy(1)" title="Click to copy.">Email: <span id="adminemail">admin@mail.com</span><br></a>
+               <a href="#" id="passwordcopy" onclick="copy(2)" title="Click to copy.">Password: <span id="adminpassword">admin</span></a>
+            </p>
+            <h5>Click on each one to copy automatically.</h5>
+        </div>
+</body>
+</html>

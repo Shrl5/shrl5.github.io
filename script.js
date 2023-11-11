@@ -33,6 +33,49 @@ function SoundcloudLink(){
             console.log("Failed opening the Soundcloud Link");
     }
 }
-function define(){
+function alerting(){
+    alert("This feature isn't available yet.");
+}
+function GoBack(){
     window.history.back();
+}
+function Login(){
+    var EmailValue = document.getElementById("email").value;
+    var PasswordValue = document.getElementById("password").value;
+    if (EmailValue === "admin@mail.com" && PasswordValue === "admin") {
+        window.open('index.html', '_self');
+        return false;
+    } else {
+        alert("Please use the email & password that's provided.");
+    }
+    return false;
+}
+function copy(id) {
+    var textarea = document.createElement("textarea");
+    var email = document.getElementById("adminemail");
+    var password = document.getElementById("adminpassword");
+    if(id === 1){
+        textarea.value = "admin@mail.com";
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        email.textContent="Copied Successfully..."
+        setTimeout(() => {
+            email.textContent = "admin@mail.com";
+        }, 1000);
+    }else if(id === 2){
+        textarea.value = "admin";
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        password.textContent="Copied Successfully..."
+        setTimeout(() => {
+            password.textContent = "admin";
+        }, 1000);
+    }
+    else{
+        alert("Error copying..")
+    }
 }

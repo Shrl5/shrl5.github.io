@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Caveat;
+    src: url(Fonts/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Crazy;
+    src: url(Fonts/Agbalumo-Regular.ttf);
+}
+@font-face {
+    font-family: MediumFont;
+    src: url(Fonts/Ubuntu-Medium.ttf);
+}
+/*----------------- Css ------------------*/
+body{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #001C30;
+    margin: 0;
+    padding: 0;
+    font-family: MediumFont;
+}
+#image{
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+}
+#return{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 20px;
+}
+a{
+    color: #DAFFFB;
+    text-decoration: none;
+    display: inline;
+}
+a:hover{
+    text-decoration: underline;
+}
+.info{
+    position: fixed;
+    padding: 10px;
+    bottom: 0px;
+    width: 400px;
+    color: #DAFFFB;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.info a{
+    display: inline;
+}
+.content{
+    position: relative;
+}
+.form input:focus{
+    caret-color: rgb(255, 0, 76);
+}
+.form input:hover{
+    background-color: hsla(195, 71%, 40%, 0.501);
+}
+.form{
+    color: #DAFFFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 400px;
+    min-height: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #176b8777;
+}
+.form h2{
+    text-align: center;
+    font-size: 2em;
+}
+.form form{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.form input{
+    font-size: 1.5em;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px dotted #64CCC5;
+    padding: 5px;
+}
+.form input::placeholder{
+    margin: 5px;
+    color: #dafffb90;
+    font-family: MediumFont;
+}
+.login,.register{
+    font-size: 2em;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 5px;
+    outline: 0px;
+    border: 0;
+    background-color: #64CCC5;
+    color: #DAFFFB;
+    font-family: MediumFont;
+}
+.login:hover,.register:hover{
+    color: #64CCC5; 
+    background-color: #DAFFFB;
+}
+/* ------------------- animation ------------------- */
+@media screen and (min-width: 250px) {
+    .content{
+        scale: 60%;
+        padding: 0;
+        margin: 0;
+    }
+    .info{
+        scale: 60%;
+    }
+}
+@media screen and (min-width: 360px) {
+    .content{
+        scale: 70%;
+        padding: 0;
+        margin: 0;
+    }
+    .info{
+        scale: 70%;
+    }
+}
+@media screen and (min-width: 490px) {
+    .content{
+        scale: 90%;
+        padding: 0;
+        margin: 0;
+    }
+    .info{
+        scale: 90%;
+    }
+}
+@media screen and (min-width: 900px) {
+    .content{
+        scale: 120%;
+        padding: 0;
+        margin: 0;
+    }
+    .info{
+        scale: 120%;
+    }
+}
