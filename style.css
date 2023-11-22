@@ -252,13 +252,13 @@ iframe::selection{
     animation-duration: 7s;
     animation-iteration-count: infinite;
 }
-.cpyright{
+.cpyright h1{
     text-align: center;
     /* color: rgb(0, 0, 0); */
     color: #f3fffe;
     margin: 15px;
 }
-.cpyright::selection{
+.cpyright h1::selection{
     color: #001C30;
     background-color: rgba(243, 240, 240, 0.678);
 }
