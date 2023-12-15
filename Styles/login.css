@@ -1,14 +1,14 @@
 @font-face {
     font-family: Caveat;
-    src: url(Fonts/Caveat-VariableFont_wght.ttf);
+    src: url(/Fonts/Caveat-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: Crazy;
-    src: url(Fonts/Agbalumo-Regular.ttf);
+    src: url(/Fonts/Agbalumo-Regular.ttf);
 }
 @font-face {
     font-family: MediumFont;
-    src: url(Fonts/Ubuntu-Medium.ttf);
+    src: url(/Fonts/Ubuntu-Medium.ttf);
 }
 /*----------------- Css ------------------*/
 body{

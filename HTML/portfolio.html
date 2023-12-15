@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghazwan's Portfolio</title>
+    <link rel="stylesheet" href="/Styles/portfolio.css">
+    <script src="/JS/portfolio.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="mainnavbar">
+            <a href="../index.html">Return to Main</a>
+        </div>
+        <ul>
+            <li><a href="#" class="active" onclick="ClassChanger('about')" id="aboutNav">About me</a></li>
+            <li><a href="#work" onclick="ClassChanger('work')" id="workNav" >My Work</a></li>
+            <li><a href="#contact" onclick="ClassChanger('contact')" id="contactNav">Contact Me</a></li>
+        </ul>
+    <div class="endofnavbar"></div>
+    </nav>
+    <main>
+    <div class="about" id="about">
+        <div class="content">
+            <div class="picture">
+                <img src="/imgs/PortfolioAvatar.jpg" alt="Ghazwan's (The Programmer) personal photo" height="250" width="250">
+                <h1>Ghazwan AA. Al-Haddad</h1>
+            </div>
+            <div class="container first">
+                <div class="info">
+                    <h1>Hello</h1>
+                    <p>My name's Ghazwan, and I am a new programmer on the field. <br>
+                    I'm born and based in Iraq/Baghdad. and my academic speciallity is Computer Engineering. <br>
+                    You may say that I can adapt very well and quickly under any circumstances.</p>
+                </div>
+                <div class="SkillsContainer">
+                    <h1>My Skills</h1>
+                    <div class="skills">
+                        <img src="/imgs/c++Icon.png" alt="C++ icon" width="70px" title="C++">
+                        <img src="/imgs/htmlIcon.png" alt="HTML icon" width="70px" title="HTML">
+                        <img src="/imgs/cssIcon.png" alt="Css icon" width="70px" title="Css">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work" id="work">
+        <h1>My Projects</h1>
+        <div class="projects">
+            <div class="project">
+                <div class="project_image">
+                    <img src="/imgs/SongsWebsite.png" alt="Song's lyrics Website" height="282px" width="500px">
+                    <div class="link_hidden">
+                        <a href="/HTML/index.html">Visit Website</a>
+                    </div>
+                </div>
+                <a href="/HTML/index.html" class="project_link">Song's Lyrics</a>
+            </div>
+            <div class="project">
+                <div class="project_image">
+                    <img src="/imgs/LoginWebsite.png" alt="Song's lyrics Website" height="282px" width="500px">
+                    <div class="link_hidden">
+                        <a href="/HTML/login.html">Visit Website</a>
+                    </div>
+                </div>
+                <a href="/HTML/login.html" class="project_link">Login Form</a>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h1>Contact With Ghazwan.</h1>
+        <div class="methods">
+            <h2 id="CopyMSG"></h2>
+            <h3>These are the avaliable methods for contacting with me.</h3>
+            <div class="mail box">
+                <div class="box_header">
+                    <h4 id="h4header">Email</h4>
+                </div>
+                <div class="box_content">
+                    <div class="singlebox">
+                        <img src="/imgs/gmail.png" alt="Gmail Icon" width="50px" title="Gmail">
+                        <a href="mailto:abasasadi8@gmail.com" title="Clicking shall open your mail app." class="contact_user">
+                            abasasadi8@gmail.com
+                        </a>
+                        <button class="copybtn" onclick="Copy('abasasadi8@gmail.com')">
+                            <img src="/imgs/copyIcon.png" alt="Copy Button" class="copyimg" width="25px" height="25px" title="Automatically Copies email to clipboard">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="social_media box">
+                <div class="box_header">
+                    <h4 id="h4header">Social Media</h4>
+                </div>
+                <div class="box_content">
+                    <div class="singlebox">
+                        <img src="/imgs/instagram.png" alt="Instagram Icon" width="50px" height="50px" title="Instaram">
+                        <p class="contact_user">@ghazwan.z</p>
+                        <button class="copybtn" onclick="Copy('ghazwan.z')">
+                            <img src="/imgs/copyIcon.png" alt="Copy Button" class="copyimg" width="25px" height="25px" title="Automatically Copies Insta's username to clipboard">
+                        </button>
+                    </div>
+                    <div class="singlebox">
+                        <img src="/imgs/telegram.png" alt="Telegram Icon" width="50px" height="50px" title="Telegram">
+                        <p class="contact_user">@shrlbo5</p>
+                        <button class="copybtn" onclick="Copy('shrlbo5')">
+                            <img src="/imgs/copyIcon.png" alt="Copy Button" width="25px" height="25px" title="Automatically Copies Telegram's username to clipboard">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="phone box">
+                <div class="box_header">
+                    <h4 id="h4header">Phone</h4>
+                </div>
+                <div class="box_content">
+                    <div class="singlebox">
+                        <img src="/imgs/telephone.png" alt="Phone Icon" width="50px" height="50px" title="Phone">
+                        <a href="#contact" onclick="PhoneShow()" class="contact_user" id="phoneNO">Show..</a>
+                    </div>
+                </div>
+            </div>
+            <h4 id="WarningMSG">
+                *Though, I highly suggest only use my email for contacting<br>
+                 and only use my phone number/social media accounts when it's strongly necessary.
+            </h4>
+        </div>
+    </div>
+    <div class="copyrights">
+        <div class="copyrights-info">
+            <h5>
+                © Ghazwan 2024. All rights reserved.
+                <br>
+                All work presented on this portfolio page is the original creation of Ghazwan.
+                <br>
+                No part of this portfolio may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the creator.
+                <br>
+                For permissions requests or any inquiries, please contact abasasadi8@gmail.com .
+            </h5>
+        </div>
+    </div>
+</main>
+</body>
+</html>

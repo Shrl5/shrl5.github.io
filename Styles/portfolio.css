@@ -1,0 +1,412 @@
+@font-face {
+    font-family: Caveat;
+    src: url(/Fonts/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Crazy;
+    src: url(/Fonts/Agbalumo-Regular.ttf);
+}
+@font-face {
+    font-family: MediumFont;
+    src: url(/Fonts/Ubuntu-Medium.ttf);
+}
+/* -----------------------------------Variables Section----------------------------------- */
+:root{
+    --darkest: rgb(0, 27, 46);
+    --lighter_darkest: rgb(0, 31, 53);
+    --lightest: rgb(245, 255, 254);
+    --light: rgb(102, 204, 197);
+    --dark: rgb(23, 107, 135);
+}
+/* -----------------------------------End of variables Section----------------------------------- */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--darkest);
+    font-family: MediumFont;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--lightest);
+}
+/* -----------------------------------Copyright Section----------------------------------- */
+.copyrights-info{
+    width: 75%;
+    margin-top: 3%;
+}
+.copyrights{
+    width: 100%;
+    --lighter_darkest : rgb(0, 18, 31);
+    background-color: var(--lighter_darkest);
+    display: flex;
+    justify-content: center;
+}
+/* -----------------------------------End of Copyright Section----------------------------------- */
+/* -----------------------------------Contact Section----------------------------------- */
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid var(--dark);
+    width: 75%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 45px;
+    border-bottom: 2px solid var(--dark);
+}
+.methods{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--lighter_darkest);
+    border-radius: 50px;
+    padding: 20px;
+    width: 50%;
+}
+#CopyMSG{
+    display: none;
+    color: crimson;
+}
+#WarningMSG{
+    color: crimson;
+    font-size: .8em;
+}
+#h4header{
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+.copybtn{
+    background: none;
+    border: none;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copybtn:hover img{
+    content: url(/imgs/copyIconHover.png);
+}
+.box{
+    display: flex;
+    width: 80%;
+    padding-bottom: 10px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.contact_user{
+    color: var(--lightest);
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+.box_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 2px solid var(--dark);
+    gap: 15px;
+}
+.singlebox{
+    display: flex;
+    align-items: center;
+}
+.box_header h4{
+    writing-mode: vertical-lr;
+}
+.box_content a:hover{
+    text-decoration: underline ;
+}
+.box_content img{
+    margin-left: 10px;
+}
+#contact_section{
+    margin: 5px;
+    font-size: 1.3em;
+}
+/* -----------------------------------End of Contact Section----------------------------------- */
+/* -----------------------------------Work Section----------------------------------- */
+.work{
+    border-top: 2px solid var(--dark);
+    width: 75%;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+.work h1{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.projects{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.project{
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.project img{
+    border: 2px solid var(--dark);
+}
+.project a{
+    margin-top: 10px;
+    color: var(--lightest);
+    font-size: 25px;
+    text-decoration: none;
+    display: inline;
+}
+.project_image{
+    position: relative;
+}
+.project a:hover{
+    text-decoration: underline;
+}
+.link_hidden{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 107, 135, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: var(--lightest);
+}
+.projects img:hover + .link_hidden{
+    display: flex;
+    transition: 3s;
+}
+.link_hidden:hover{
+    display: flex;
+    transition: 3s;
+}
+/* -----------------------------------End of Work Section----------------------------------- */
+/* -----------------------------------About section----------------------------------- */
+.about{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.content{
+    margin: 15px;
+    color: var(--lightest);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    align-items: center;
+    width: 100%;
+}
+.picture{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    height: auto;
+}
+.picture img{
+    background-color: var(--light);
+    border-radius: 50%;
+
+}
+.first.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.endofcontent{
+    height: auto;
+    width: 100%;
+}
+.info{
+    margin: 15px;
+    margin-right: 0px;
+    text-align: left;
+    border-right: 2px solid var(--dark);
+    padding: 5px;
+    width: 50%;
+}
+.SkillsContainer{
+    text-align: center;
+    margin: 15px;
+    margin-left: 0px;
+    border-top: 2px solid var(--dark);
+    width: 50%;
+}
+.skills{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* -----------------------------------End of About section----------------------------------- */
+/* -----------------------------------Navigation bar Section----------------------------------- */
+.navbar{
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 15px;
+    background-color: var(--dark);
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+.endofnavbar{
+    margin-right: 10px;
+    width: 100px;
+}
+.mainnavbar{
+    margin-left: 10px;
+}
+.navbar ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    overflow: hidden;
+}
+.navbar a::selection{
+    color: var(--darkest);
+    background-color: rgba(243, 240, 240, 0.678);
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar a{
+    text-decoration: none;
+    color: var(--lightest);
+    display: block;
+    text-align: center;
+    padding: 15px;
+    float: left;
+    margin-top: 2px;
+    border-radius: 50px;
+}
+.navbar a:hover{
+    background-color: var(--lightest);
+    color: var(--light);
+    transition: .3s;
+}
+.active{
+    border-radius: 50px;
+    background-color:var(--darkest);
+}
+/* -----------------------------------End of Navigation bar Section----------------------------------- */
+/* -----------------------------------Responsive CSS----------------------------------- */
+@media only screen and (max-width:1050px){
+    .methods{
+        width: 70%;
+    }
+}
+@media only screen and (max-width:960px){
+    .projects{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content{
+        height: auto;
+    }
+    .first.container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .info{
+        width: 75%;
+    }
+    .project{
+        border-bottom: 2px solid var(--dark);
+    }
+    .SkillsContainer{
+        border-top: none;
+    }
+    .info{
+        border-bottom: 2px solid var(--dark);
+    }
+    .methods{
+        align-items: flex-start;
+    }
+}
+@media only screen and (max-width:860px){
+    .methods{
+    width: 80%;
+    }
+}
+@media only screen and (max-width:730px){
+    .info p{
+        font-size: .7em;
+    }
+    .navbar a{
+        font-size: .7em;
+    }
+    .copyrights-info{
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width:635px){
+    .methods{
+        width: 100%;
+    }
+    .navbar{
+        width: 90%;
+    }
+    .info{
+        width: 90%;
+    }
+    .copyrights-info{
+        width: 90%;
+        font-size: 0.7em;
+    }
+}
+@media only screen and (max-width:530px){
+    .endofnavbar{
+        width: 60px;
+    }
+    .loginnavbar{
+        width: 60px;
+    }
+    .picture h1{
+        font-size: 1.5em;
+    }
+    body{
+        width: 530px;
+    }
+    main{
+        width: 530px;
+    }
+}
+/* ----------------------------------- End of Responsive CSS----------------------------------- */
+/* -----------------------------------Animations----------------------------------- */
+@keyframes FadeOut {
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
+}
+/* -----------------------------------end of Animations----------------------------------- */
