@@ -10,15 +10,27 @@
     font-family: MediumFont;
     src: url(/Fonts/Ubuntu-Medium.ttf);
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 /* -----------------------------------Variables Section----------------------------------- */
 :root{
-    --darkest: rgb(0, 27, 46);
+    /* --darkest: rgb(0, 27, 46);
     --lighter_darkest: rgb(0, 31, 53);
     --lightest: rgb(245, 255, 254);
     --light: rgb(102, 204, 197);
-    --dark: rgb(23, 107, 135);
+    --dark: rgb(23, 107, 135); */
+
+
+    --darkest: rgb(33, 33, 33);
+    --lighter_darkest: rgb(44, 44, 44);
+    --lightest: rgb(20, 255, 236);
+    --light: rgb(13, 115, 119);
+    --dark: rgb(50, 50, 50);
 }
 /* -----------------------------------End of variables Section----------------------------------- */
+
+* {
+    font-family: 'Poppins', MediumFont;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -26,7 +38,7 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: var(--darkest);
-    font-family: MediumFont;
+    /* font-family: MediumFont; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,7 +57,6 @@ main{
 }
 .copyrights{
     width: 100%;
-    --lighter_darkest : rgb(0, 18, 31);
     background-color: var(--lighter_darkest);
     display: flex;
     justify-content: center;
@@ -75,6 +86,9 @@ main{
 #CopyMSG{
     display: none;
     color: crimson;
+}
+.methods h3{
+    text-align: center;
 }
 #WarningMSG{
     color: crimson;
@@ -268,7 +282,7 @@ main{
 .navbar{
     border-radius: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 75%;
     margin-top: 15px;
     background-color: var(--dark);
@@ -276,15 +290,14 @@ main{
     top: 0px;
     z-index: 5;
 }
-.endofnavbar{
-    margin-right: 10px;
-    width: 100px;
-}
 .mainnavbar{
+    position: absolute;
+    left: 5px;
     margin-left: 10px;
 }
 .navbar ul{
     margin: 0px;
+    margin-right: 15px;
     padding: 0px;
     list-style-type: none;
     overflow: hidden;
