@@ -277,6 +277,17 @@ main{
     display: flex;
     justify-content: space-evenly;
 }
+.GH-a{
+    margin-top: 20px;
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--lightest);
+}
+.GH-a:hover{
+    color: var(--light);
+    transition: all ease;
+    transition-duration: .3s;
+}
 /* -----------------------------------End of About section----------------------------------- */
 /* -----------------------------------Navigation bar Section----------------------------------- */
 .navbar{
